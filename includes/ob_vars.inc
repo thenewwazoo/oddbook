@@ -25,6 +25,7 @@
 //non-customized variables we'll need throughout the application.
 $thisfile = getenv("SCRIPT_NAME");
 $pathstr = getenv("PATH_INFO");
+date_default_timezone_set("America/Los_Angeles");
 $date = getdate();
 $thisyear = $date['year'];
 $thismonth = strtolower($date['month']);
