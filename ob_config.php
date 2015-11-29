@@ -14,10 +14,10 @@
 	Oddbook uses MySQL to store all its data.  Without a database server (host), 
 	username, password, and (preferably) empty database, Oddbook won't be usable.
 */
-$dbhost = "";
-$dbuser = "";
-$dbpass = "";
-$dbname = "";
+$dbhost = "db";
+$dbuser = "oddbook";
+$dbpass = "0ddb00k!";
+$dbname = "oddbook";
 
 /*
 	Username & Password:
@@ -61,7 +61,7 @@ $siteDescription = "A book list.";
 	will display these years and month links regardless if there are entries
 	dated between the start year and present or not.
 */
-$startyear = 2010;
+$startyear = 2015;
 
 /*
 	RSS Entries:
