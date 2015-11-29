@@ -1,0 +1,17 @@
+php:
+  build: php-mysql
+  volumes:
+    - .:/var/www/html/oddbook
+  ports:
+    - "8080:80"
+  links:
+    - db
+db:
+  image: mysql
+  expose:
+    - 3369
+  environment:
+    MYSQL_DATABASE: oddbook
+    MYSQL_USER: oddbook
+    MYSQL_PASSWORD: "0ddb00k!"
+    MYSQL_ROOT_PASSWORD: "2rj3ifnf08eu9eihvwi3uroi23rohv9wihe"
